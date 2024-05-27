@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LanguageSelectionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_language"
+        android:textColor="@color/light_blue_600"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="50dp"
+        app:strokeColor="@color/light_blue_600"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:cornerRadius="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/english"
+        android:textColor="@color/light_blue_600"
+        android:id="@+id/english_btn"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="50dp"
+        app:strokeColor="@color/light_blue_600"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        app:cornerRadius="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/korean"
+        android:textColor="@color/light_blue_600"
+        android:id="@+id/korean_btn"
+        />
+
+</LinearLayout>
