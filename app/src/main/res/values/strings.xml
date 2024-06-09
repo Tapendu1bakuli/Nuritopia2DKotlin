@@ -51,4 +51,8 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
 </resources>

@@ -13,6 +13,14 @@
         android:theme="@style/Theme.Nuritopia_kotlin"
         tools:targetApi="31">
         <activity
+            android:name=".Home"
+            android:exported="false"
+            android:theme="@style/Theme.Nuritopia_kotlin" />
+        <activity
+            android:name=".login"
+            android:exported="false"
+            android:theme="@style/Theme.Nuritopia_kotlin" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:theme="@style/Theme.Nuritopia_kotlin" />

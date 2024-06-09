@@ -12,6 +12,17 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        setContentView(R.layout.activity_login)
+        val loginButtonClick = findViewById<Button>(R.id.login_btn)
+        loginButtonClick.setOnClickListener{
+            val intent = Intent(this, login::class.java)
+            startActivity(intent)
+        }
+        val registerButtonClick = findViewById<Button>(R.id.register_btn)
+        registerButtonClick.setOnClickListener{
+            val intent = Intent(this, login::class.java)
+            startActivity(intent)
+        }
 
     }
 }
