@@ -3,6 +3,7 @@ package com.example.nuritopia_kotlin
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import com.google.android.material.snackbar.Snackbar
@@ -23,6 +24,7 @@ class login : AppCompatActivity() {
         val emailField = findViewById<TextInputEditText>(R.id.emailField)
         val passwordField = findViewById<TextInputEditText>(R.id.passwordField)
         val loginButton = findViewById<Button>(R.id.login_btn)
+        val registerNow = findViewById<TextView>(R.id.register_now)
         loginButton.setOnClickListener {
             val email = emailField.text.toString()
             val password = passwordField.text.toString()
@@ -42,15 +44,9 @@ class login : AppCompatActivity() {
                 }
             }
         }
+        registerNow.setOnClickListener{
+            val intent = Intent(this, Register::class.java)
+            startActivity(intent)
+        }
     }
 }
-//        val engButtonClick = findViewById<Button>(R.id.english_btn)
-//        engButtonClick.setOnClickListener{
-//            val intent = Intent(this, LoginActivity::class.java)
-//            startActivity(intent)
-//        }
-//        val koreanButtonClick = findViewById<Button>(R.id.korean_btn)
-//        koreanButtonClick.setOnClickListener{
-//            val intent = Intent(this, LoginActivity::class.java)
-//            startActivity(intent)
-//        }
